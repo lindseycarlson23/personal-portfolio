@@ -1,0 +1,67 @@
+/* set root color cheme */
+:root {
+--navy: navy;
+--backgroundcolor: rgb(219, 216, 216);
+}
+
+/* set content highlight color and background */
+::selection {
+    /* how do I determine which content gets the highlight? */
+}
+
+html {
+    /* QUESTION - WHAT IS THIS? */
+    font-size: 50%;
+}
+
+nav {
+    align-items: inline;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    line-height: 1.5;
+    color: var(--navy);
+    background-color: var(--backgroundcolor);
+}
+
+.title {
+    border-style: 2px solid var(--navy);
+}
+
+.title {
+    background-color: aqua;
+    color: black;
+    /*how do I do 2 different text sizes? */
+    background-image: TBD /*add background image */;
+    /*size of the title box*/
+    /*location of the title box*/
+}
+
+
+
+.title {
+    border-right: solid black 4px;
+}
+
+.container {
+    display: flex;
+    border: solid red 5px;
+}
+
+.aside-title {
+    align-items: left;
+}
+
+.big-project-container {
+    border: solid blue 5px;
+}
+
+.project-container {
+    border: solid yellow 5px
+}
+
+.project {
+    border: solid green 3px
+}
