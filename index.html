@@ -9,65 +9,66 @@
     <link rel="stylesheet" href="Assets/reset.css">
 </head>
 
+
 <body>
-    <div>
-        <nav>
-            <h1 class="title">
-                Lindsey
+
+    <nav class="topnav">
+        
+        <section class="topnav-left">
+            <h1>
+            Lindsey
             </h1>
-            <a href="">
-                About Me
-            </a>
-            <a href="">
-                Work
-            </a>
-            <a href="">
-                Contact Me
-            </a>
-            <a href="">
-                Resume
-            </a>
-        </nav>
+        </section>
+
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+
+    </nav>
 
 
 
         <header>
             <!--background image-->
-            <img src="" alt="">
-            <!--personal photo-->
+            <!--<img src="profile pic.jpg" alt="Headshot of Lindsey">-->
             <h2 class="subtitle">
                 Full Stack Web Developer
             </h2>
         </header>
-    </div>
+    
 
     <main class="container">
-        <!--About Me Header Section-->
-        <section>
-            <h3 class="aside title">About Me</h3>
-        </section>
-
-        <!--About Me Description Section-->
-        <section class="paragraph">
-            <p> 
-            Descripton of my skills and background
+        <!--1) About Me Header Section-->
+        <div class="about-me">
+            <p>
+                <h3 class="aside title">About Me</h3>
             </p>
-        </section>
 
-        <!--Work Header Section-->
-        <section>
+            <!--2) About Me Description Section-->
+            <section class="paragraph">
+                <p> 
+                    Hi, I'm Lindsey. I have degrees in music, and 11 years of experience as a corporate recruiting. Now I am applying my analytical skills to web development. Check out my work below!
+                </p>
+            </section>
+        </div>
+
+        
+        <!--3) Work Header Section-->
+        <section #work>
             <h3 class="aside-title">Work</h3>
             <!--vertical line --- do a right border-->
         </section>
 
 
-        <!--Project Card Section-->
+        <!--4) Project Card Section-->
         <section>
             <figure class="big-project-container">
             
                 <p class="big-project">Project 1</p>
-                    <h4 class="img">
-                        Main Project
+                    <h4>
                         <img src="project 1.jpg" alt="">   
                     </h4>
             </figure>
@@ -96,16 +97,17 @@
             </figure>
         </section>
 
-        <!--Contact Me Header Section-->
-        <section class="aside-title">
+        <!--5) Contact Me Header Section-->
+        <section #contact-me>
             <h3>Contact Me</h3>
         </section> 
 
-        <!--Contact Me Content Section-->
-        <section>   
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </section>
+        <!--6) Contact Me Content Section-->
+        <footer class="footer">   
+            <li>555.555.5555</li>
+            <li><a href="">lindseycarlson23@gmail.com</a></li>
+            <li><a href="https://github.com/lindseycarlson23">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/lindseycarlson23/">LinkedIn</a></li>
+        </footer>
     </main>
 </body>

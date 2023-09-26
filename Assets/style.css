@@ -6,15 +6,12 @@
 
 /* set content highlight color and background */
 ::selection {
-    /* how do I determine which content gets the highlight? */
+   background-color: var(--backgroundcolor); /* how do I determine which content gets the highlight? */
+    color: var(--navy);
 }
 
 html {
     /* QUESTION - WHAT IS THIS? */
-    
-}
-
-nav {
     
 }
 
@@ -26,29 +23,70 @@ body {
     background-color: var(--backgroundcolor);
 }
 
-.title {
-    border-style: 2px solid var(--navy);
-}
-
-.title {
-    background-color: aqua;
-    color: black;
-    /*how do I do 2 different text sizes? */
-    background-image: TBD /*add background image */;
-    /*size of the title box*/
-    /*location of the title box*/
-}
-
 img {
     max-width: 200px;
+    max-height: 200px;
 }
 
-.title {
-    border-right: solid black 4px;
+header {
+    text-align: right;
+    border: solid yellow;
+    background-image: url(ray-mallick-5J1bHRX1fNw-unsplash.jpg);
+    height: 150px;
+}
+
+h1 {
+    display: inline;
+}
+
+.topnav {
+    border: solid purple 3px;
+    background-color: darkslategrey;
+    overflow: hidden;
+    height: 100px;
+    text-align: right;
+    color: lightblue
+}
+
+.topnav li {
+    list-style: none;
+    display: inline;
+    text-align: right;
+    color: lightblue;
+    }
+
+.topnav a {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.topnav-left {
+    float: left;
+    background-color: aqua;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    font-size: larger;
+}
+
+.subtitle {
+
+}
+
+.about-me {
+    display: flex;
+    display: inline;
+    height: fit-content;
+}
+
+
+.footer li {
+    list-style: none;
 }
 
 .container {
     display: flex;
+    flex-direction: column;*/
     border: solid red 5px;
 }
 
@@ -58,10 +96,12 @@ img {
 
 .big-project-container {
     border: solid blue 5px;
+    
 }
 
 .project-container {
     display: flex;
+    /*flex-direction: column;*/
     border: solid yellow 5px
 }
 
@@ -72,12 +112,13 @@ img {
 /*Larger Screens*/
 @media screen and (min-width: 992px) {
     header {
-        width: 75%
+        width: 100%
     }
 
-   /* .container {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }   */ 
+    .container {
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }   
 
 }
