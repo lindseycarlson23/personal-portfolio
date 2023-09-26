@@ -11,11 +11,11 @@
 
 html {
     /* QUESTION - WHAT IS THIS? */
-    font-size: 50%;
+    
 }
 
 nav {
-    align-items: inline;
+    
 }
 
 body {
@@ -39,7 +39,9 @@ body {
     /*location of the title box*/
 }
 
-
+img {
+    max-width: 200px;
+}
 
 .title {
     border-right: solid black 4px;
@@ -51,7 +53,7 @@ body {
 }
 
 .aside-title {
-    align-items: left;
+    border: solid orange 3px;
 }
 
 .big-project-container {
@@ -59,9 +61,23 @@ body {
 }
 
 .project-container {
+    display: flex;
     border: solid yellow 5px
 }
 
 .project {
     border: solid green 3px
+}
+
+/*Larger Screens*/
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%
+    }
+
+   /* .container {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }   */ 
+
 }
